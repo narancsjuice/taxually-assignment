@@ -1,15 +1,17 @@
 # taxually-assignment
-**Preview 0.1**
+**Preview 0.2**
 
 This web application was created for the purpose of fulfilling the requirements of the Taxually interview assignment.
 
 It is capable of the following functions at the moment:
-* Showing the default Angular showcase website 
+* Login page
+* File upload page (redirected when signing in)
 
 Upcoming features:
-* Login and register page
-* File upload and sorting page
-* Login stored in browser data
+* Register page
+* Login authentication
+* File upload
+* File sorting
 
 Technologies used:
 
