@@ -1,0 +1,144 @@
+<div class="px-4 md:px-10 pt-4 md:pt-7">
+  <div class="flex items-center justify-between">
+      <p tabindex="0" class="focus:outline-none text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800">Files</p>
+      <div class="py-3 px-4 flex items-center text-sm font-medium leading-none text-gray-600 bg-gray-200 hover:bg-gray-300 cursor-pointer rounded">
+          <p>Sort By:</p>
+          <select aria-label="select" class="focus:text-blue-600 focus:outline-none bg-transparent ml-1">
+              <option class="text-sm text-blue-800">Latest</option>
+              <option class="text-sm text-blue-800">Oldest</option>
+              <option class="text-sm text-blue-800">File type</option>
+              <option class="text-sm text-blue-800">File size</option>
+              <option class="text-sm text-blue-800">File name</option>
+          </select>
+      </div>
+  </div>
+  <div class="bg-white pt-4 md:pt-7 pl-4 md:pl-8 xl:pl-10">
+      <div class="flex items-center justify-end">
+          <button id="upload" class="focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 mt-4 sm:mt-0 inline-flex items-start justify-start px-6 py-3 bg-blue-700 hover:bg-blue-600 focus:outline-none rounded">
+            <p class="text-sm font-medium leading-none text-white">Upload new file</p>
+            <input type="file" id="fileUpload" class="hidden"/>
+          </button>
+      </div>
+  </div>
+</div>
+<div class="sm:px-6 h-full mx-4">
+    <table class="w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5">
+      <thead class="text-white">
+        <tr class="bg-blue-400 flex flex-col flex-no wrap table-row rounded-l-lg rounded-none mb-2 sm:mb-0">
+          <th class="p-3 text-left">File name</th>
+          <th class="p-3 text-left">File type</th>
+          <th class="p-3 text-left">Upload date</th>
+          <th class="p-3 text-left">Last modified</th>
+          <th class="p-3 text-left">Uploaded by</th>
+          <th class="p-3 text-left" width="110px">Actions</th>
+        </tr>
+
+      </thead>
+      <tbody class="flex-1 sm:flex-none">
+        <tr class="flex flex-col flex-no wrap table-row mb-2 sm:mb-0">
+          <td class="border-grey-light border hover:bg-gray-100 p-3">uploaded_file1.pdf</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">PDF</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3">2022.02.02</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3">2022.02.02</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3">John Deere</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3 ">
+            <div class="flex justify-center items-center">
+              <button class="hover:text-red-600 hover:font-medium cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="" viewBox="0 0 16 16">
+                  <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                </svg>
+              </button>
+              <button class="hover:text-red-600 hover:font-medium cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-4" viewBox="0 0 16 16">
+                  <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                </svg>
+              </button>
+              </div>
+          </td>
+        </tr>
+        <tr class="flex flex-col flex-no wrap table-row mb-2 sm:mb-0">
+          <td class="border-grey-light border hover:bg-gray-100 p-3">testfile</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">JSON</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3">2022.02.02</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3">2022.04.12</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3">Jane Doe</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3 ">
+            <div class="flex justify-center items-center">
+              <button class="hover:text-red-600 hover:font-medium cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="" viewBox="0 0 16 16">
+                  <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                </svg>
+              </button>
+              <button class="hover:text-red-600 hover:font-medium cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-4" viewBox="0 0 16 16">
+                  <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                </svg>
+              </button>
+              </div>
+          </td>
+        </tr>
+        <tr class="flex flex-col flex-no wrap table-row mb-2 sm:mb-0">
+            <td class="border-grey-light border hover:bg-gray-100 p-3">random_filename</td>
+            <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">DOCX</td>
+            <td class="border-grey-light border hover:bg-gray-100 p-3">2022.02.02</td>
+            <td class="border-grey-light border hover:bg-gray-100 p-3">2022.03.09</td>
+            <td class="border-grey-light border hover:bg-gray-100 p-3">John Smith</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3 ">
+            <div class="flex justify-center items-center">
+              <button class="hover:text-red-600 hover:font-medium cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="" viewBox="0 0 16 16">
+                  <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                </svg>
+              </button>
+              <button class="hover:text-red-600 hover:font-medium cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-4" viewBox="0 0 16 16">
+                  <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                </svg>
+              </button>
+              </div>
+          </td>
+        </tr>
+        <tr class="flex flex-col flex-no wrapb table-row mb-2 sm:mb-0">
+          <td class="border-grey-light border hover:bg-gray-100 p-3">purchases.xml</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">XML</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3">2022.02.02</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3">2022.02.02</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3">Jill Test</td>
+          <td class="border-grey-light border hover:bg-gray-100 p-3 ">
+            <div class="flex justify-center items-center">
+              <button class="hover:text-red-600 hover:font-medium cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="" viewBox="0 0 16 16">
+                  <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                </svg>
+              </button>
+              <button class="hover:text-red-600 hover:font-medium cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-4" viewBox="0 0 16 16">
+                  <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                </svg>
+              </button>
+              </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<style>
+
+  @media (min-width: 640px) {
+    table {
+      display: inline-table !important;
+    }
+
+    thead tr:not(:first-child) {
+      display: none;
+    }
+  }
+
+  td:not(:last-child) {
+    border-bottom: 0;
+  }
+
+  th:not(:last-child) {
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+  }
+</style>
