@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6690055-e201-4843-8271-e257f005c3e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taxually-frontend/src/app/files/files.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/taxually-frontend/src/app/files/files.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
