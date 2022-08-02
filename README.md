@@ -1,5 +1,5 @@
 # taxually-assignment
-**Preview 0.2**
+**Preview 0.2.1**
 
 This web application was created for the purpose of fulfilling the requirements of the Taxually interview assignment.
 
